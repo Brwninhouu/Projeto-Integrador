@@ -40,22 +40,21 @@ a:active {
         habilita o form a enviar arquivo-->
         <center><h1>Cadastrar personagens</h1>
         <fieldset style="width: 30%;">
-		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
-        Nome do personagem:<br>
-        <input type="text" name="personagem" required="required"/>
+		<b><form action="gravarusuario.php" method="post" enctype="multipart/form-data">
+        E-mail:<br>
+        <input type="text" name="email" required="required"/>
         <br><br>
-        Recompensa:<br>
-        <input type="text" name="recompensa" required="required"/>
+        Senha:<br>
+        <input type="password" name="senha" required="required"/>
         <br><br>
-        Fruta:<br>
-        <textarea name="fruta"></textarea>
+        Administrador?<br>
+        (1) Para sim.<br>
+        (2) Para não.<br>
+        <input type="text" name="adm" required="required"/>
         <br><br>
-        Foto:<br>
-        <input type="file" name="foto" required="required"/><br>
-        <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-        <a href="pag3.php">CADASTRAR USUÁRIOS<a><br>
+        <a href="pag1.php">PÁGINA INICIAL<a><br>
         <a href="pag2.php">CONSULTAR PERSONAGENS<a>
         </fieldset>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
