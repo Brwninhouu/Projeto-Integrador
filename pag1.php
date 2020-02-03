@@ -38,7 +38,8 @@ a:active {
 <br><br><br><br><br><br><br><br><br><br><br>
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
-        <center><h1>Cadastrar Produtos</h1>
+        <center><h1>Painel Administrador<br>
+    Cadastrar Produtos:</h1>
         <fieldset style="width: 30%;">
 		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
         Nome do produto:<br>

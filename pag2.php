@@ -47,9 +47,9 @@ if(mysqli_num_rows($res) > 0){
     <body>
         <table width="100%" border="3">
             <tr>
-                <th>Personagem</th>
-                <th>Recompensa</th>
-                <th>Fruta</th>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Descrição</th>
                 <th>Foto</th>
             </tr>
          <?php
