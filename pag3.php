@@ -20,7 +20,7 @@ background-position: center;
 }
 
 h1 {
-	color: Maroon;
+	color: black;
 }
 
 a:link, a:visited {

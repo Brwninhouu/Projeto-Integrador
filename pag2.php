@@ -11,7 +11,7 @@
 
 body {
 
-background: NavajoWhite;
+background: black;
 
 background-repeat: no-repeat;
 
@@ -19,7 +19,8 @@ background-position: center;
 
 }
 h1 {
-	color: Maroon;
+	
+    color: white;
 }
 
 td {
@@ -28,15 +29,21 @@ td {
 }
 th{
     font-size: 25px;
-    color: Maroon;
+    color: black;
 }
 img{
     width:200px;
     height:200px;
 }
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+background: white;
+}
+
 </style>
 
-<center><h1>Consultar produtos</h1>
+<h1>Consultar produtos</h1>
 <hr>
 <?php
 include_once "conexao.php";
@@ -45,19 +52,19 @@ $res = mysqli_query($con,$sql);
 if(mysqli_num_rows($res) > 0){
     ?>
     <body>
-        <table width="100%" border="3">
+        <table width="100%">
             <tr>
-                <th>Produto</th>
-                <th>Valor</th>
-                <th>Descrição</th>
-                <th>Foto</th>
+                <th>Produto:</th>
+                <th>Valor:</th>
+                <th>Descrição:</th>
+                <th>Foto:</th>
             </tr>
          <?php
          while($linha = mysqli_fetch_array($res)){
              ?>
              <tr>
                  <td><center><?php echo $linha["personagem"];?></td>
-                 <td><center><?php echo $linha["recompensa"];?></td>
+                 <td><center>R$ <?php echo $linha["recompensa"];?></td>
                  <td><center><?php echo $linha["fruta"];?></td>
                  <td><center><img src="upload/<?php echo $linha["foto"]; ?>"></td>         
          <?php }
@@ -68,7 +75,7 @@ if(mysqli_num_rows($res) > 0){
 }else {
     echo "Nenhum Personagem Encontrado!!!!!!!!!!!!!!!!";
 }
-?>
+?>      
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
