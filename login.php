@@ -19,7 +19,7 @@ while($quebrar = mysqli_fetch_array($rs)){
     if($adm == 1){
         header('location: pag1.php');
     }else{
-        header('location: pag2.php');
+        header('location: index.html');
     }
 }
     }else{

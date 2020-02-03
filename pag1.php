@@ -38,23 +38,24 @@ a:active {
 <br><br><br><br><br><br><br><br><br><br><br>
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
-        <center><h1>Cadastrar personagens</h1>
+        <center><h1>Cadastrar Produtos</h1>
         <fieldset style="width: 30%;">
 		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
-        Nome do personagem:<br>
+        Nome do produto:<br>
         <input type="text" name="personagem" required="required"/>
         <br><br>
-        Recompensa:<br>
+        Valor:<br>
         <input type="text" name="recompensa" required="required"/>
         <br><br>
-        Fruta:<br>
+        Descrição:<br>
         <textarea name="fruta"></textarea>
         <br><br>
-        Foto:<br>
+        Selecionar foto<br>
         <input type="file" name="foto" required="required"/><br>
         <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
+        <a href="index.html">PÁGINA INICIAL<a><br>
         <a href="pag3.php">CADASTRAR USUÁRIOS<a><br>
         <a href="pag2.php">CONSULTAR PERSONAGENS<a>
         </fieldset>

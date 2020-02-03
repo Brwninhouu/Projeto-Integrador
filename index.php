@@ -30,6 +30,7 @@ h1 {
     <br><br>
     <h4>Senha: <input type="password" name="senha" placeholder="Digite a Senha"/></h4>
     <br><br>
+    <a href="cadastrousuario.php">FAÇA SEU CADASTRO!!<a><br>
 <input type="submit" value="Entrar no Sistema"/>
 </form>
 </fieldset>

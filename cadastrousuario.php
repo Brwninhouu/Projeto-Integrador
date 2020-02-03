@@ -47,15 +47,12 @@ a:active {
         Senha:<br>
         <input type="password" name="senha" required="required"/>
         <br><br>
-        Administrador?<br>
-        (1) Para sim.<br>
-        (2) Para não.<br>
-        <input type="text" name="adm" required="required"/>
+        
+        <input type="hidden" name="adm" required="required" value="0"/>
         <br><br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-        <a href="pag1.php">PÁGINA INICIAL<a><br>
-        <a href="pag2.php">CONSULTAR PERSONAGENS<a>
+        <a href="index.php">LOGAR<a><br>
         </fieldset>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</body>
