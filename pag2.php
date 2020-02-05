@@ -9,40 +9,45 @@
     <title>Consultar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-       
-        <a class="navbar-brand" href="index.html">One piece</a>
+<style>
+    #fonte{color:white;}
+    
+    </style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color:#00BFFF;">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Página inicial <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="frutas.html">Frutas conhecidas</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="pag2.php">Produtos</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="historia.html">História</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="personagem.html">Personagens</a>
-                </li>
-                
-            </ul>
+<a class="navbar-brand" href="index.html">GEEK STORE</a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color:rgb(99, 96, 96);">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html" id="fonte">Página inicial <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="pag2.php" id="fonte">Produtos</a>
+        </li>
+        <li class="nav-item ">
           
-        </div>
-    </nav>
-
+        </li>
+        <li class="nav-item ">
+     
+        </li>
+       
+        </li>
+    </ul>
+   
+</div>
+</nav>
 <body>
-
+<section class="container-fluid">
 
 <style>
 
@@ -64,8 +69,8 @@ td, th {
 }
 
 img{
-    width:250px;
-    height:250px;
+    width:100px;
+    height:100px;
 }
 table {
     background:white;
@@ -76,7 +81,10 @@ p{
     font-style:italic;
     color: gray;
 }
-
+table{
+   
+text-align:center;
+}
 </style>
 
 
@@ -89,7 +97,8 @@ $res = mysqli_query($con,$sql);
 if(mysqli_num_rows($res) > 0){
     ?>
     <body>
-        <table width="100%" border="3">
+       
+    <table>
             <tr>
                 <th>Produto</th>
                 <th>Valor</th>
@@ -101,10 +110,10 @@ if(mysqli_num_rows($res) > 0){
          while($linha = mysqli_fetch_array($res)){
              ?>
              <tr>
-                 <td><center><?php echo $linha["personagem"];?></td>
-                 <td><center>R$: <?php echo $linha["recompensa"];?></td>
-                 <td><center><?php echo $linha["fruta"];?></td>
-                 <td><center><img src="upload/<?php echo $linha["foto"]; ?>"></td>         
+                 <td><?php echo $linha["personagem"];?></td>
+                 <td>R$: <?php echo $linha["recompensa"];?></td>
+                 <td><?php echo $linha["fruta"];?></td>
+                 <td><img src="upload/<?php echo $linha["foto"]; ?>"></td>         
          <?php }
          ?>
          </table>
@@ -114,9 +123,10 @@ if(mysqli_num_rows($res) > 0){
     echo "Nenhum Personagem Encontrado!!!!!!!!!!!!!!!!";
 }
 ?>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+</section>
 </body>
+
 <footer id="myFooter">
     <div class="footer-copyright text-center py-3">@ 2019 Copyright:
         <a href="https://google.com/">Google.com</a>
