@@ -35,7 +35,7 @@
         }elseif($foto["size"] > 1024 *800){
             echo "<h1>Tamanho igual o do lucão, vai dar não!</h1>";
         }else{
-            echo "agora foi, parabéns!!<br>";
+            
     
         //chamar conexão com o banco
         include_once "conexao.php";
@@ -48,7 +48,9 @@
         (null,'".$personagem."','".$recompensa."','".$fruta."','".$nomefoto."')";
 
         if(mysqli_query($con,$sql)){
-echo "Funcionou, besta!";
+            echo "<script>
+            alert('Produto cadastrado!'); location= './pag1.php';
+            </script>";
 //mover o arquivo de foto para a pasta
 move_uploaded_file($foto["tmp_name"],"upload/".$nomefoto);
         }else{

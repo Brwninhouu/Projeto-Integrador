@@ -9,6 +9,11 @@
     <title>Consultar</title>
 </head>
 <body>
+<script>
+        function sair() {    
+	alert('Você saiu do sistema!'); location= './index.php';
+}
+</script>
 
 <style>
     #fonte{color:white;}
@@ -33,6 +38,9 @@
         </li>
         <li class="nav-item ">
             <a class="nav-link" href="pag2.php" id="fonte">Produtos</a>
+        </li>
+        <li class="nav-item ">
+        <a class="nav-link" href="#" id="fonte" onclick=sair()>SAIR</a>
         </li>
         <li class="nav-item ">
           

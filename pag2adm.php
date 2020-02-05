@@ -9,6 +9,11 @@
     <title>Consultar</title>
 </head>
 <body>
+<script>
+        function sair() {    
+	alert('Você saiu do sistema!'); location= './index.php';
+}
+</script>
 
 <style>
     #fonte{color:white;}
@@ -38,9 +43,7 @@
         <a class="nav-link" href="pag1.php" id="fonte">Painel ADM</a>
         </li>
         <li class="nav-item ">
-     
-        </li>
-       
+        <a class="nav-link" href="#" id="fonte" onclick=sair()>SAIR</a>
         </li>
     </ul>
    
@@ -120,7 +123,7 @@ if(mysqli_num_rows($res) > 0){
        
 <?php
 }else {
-    echo "Nenhum Personagem Encontrado!!!!!!!!!!!!!!!!";
+    echo "Nenhum produto cadastrado.";
 }
 ?>
 

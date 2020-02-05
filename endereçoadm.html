@@ -12,6 +12,12 @@
 </head>
 
 <body style="background-color: black;">
+    <script>
+        function sair() {
+            alert('Você saiu do sistema!');
+            location = './index.php';
+        }
+    </script>
 
 
 
@@ -56,6 +62,9 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="pag1.php" id="fonte"> Painel ADM</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" id="fonte" onclick="sair()"> SAIR</a>
                 </li>
             </ul>
 

@@ -7,6 +7,11 @@
     <title>Personagens</title>
 </head>
 <body>
+    <script>
+        function sair() {    
+	alert('Você saiu do sistema!'); location= './index.php';
+}
+</script>
 <style>
 
 body {
@@ -40,7 +45,7 @@ a:active {
         habilita o form a enviar arquivo-->
         <center><h1>Cadastrar usuários</h1>
         <fieldset style="width: 30%;">
-		<b><form action="gravarusuario.php" method="post" enctype="multipart/form-data">
+		<b><form action="gravaradm.php" method="post" enctype="multipart/form-data">
         E-mail:<br>
         <input type="text" name="email" required="required"/>
         <br><br>
@@ -56,7 +61,7 @@ a:active {
         </form><br><br><br>
         <a href="indexadm.html">PÁGINA INICIAL<a><br>
         <a href="pag2adm.php">CONSULTAR PERSONAGENS<a><br>
-        <a href="pag1.php">Painel ADM<a>
+        <button type="button" onclick="sair()">SAIR</button>
         </fieldset>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</body>
