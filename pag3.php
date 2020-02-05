@@ -54,8 +54,9 @@ a:active {
         <br><br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-        <a href="pag1.php">PÁGINA INICIAL<a><br>
-        <a href="pag2.php">CONSULTAR PERSONAGENS<a>
+        <a href="indexadm.html">PÁGINA INICIAL<a><br>
+        <a href="pag2adm.php">CONSULTAR PERSONAGENS<a><br>
+        <a href="pag1.php">Painel ADM<a>
         </fieldset>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</body>

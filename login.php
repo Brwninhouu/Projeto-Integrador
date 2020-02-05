@@ -23,7 +23,9 @@ while($quebrar = mysqli_fetch_array($rs)){
     }
 }
     }else{
-         echo "O e-mail ou senha estão incorretos!";
+        echo "<script>
+        alert('E-mail ou senha incorretos!'); location= './index.php';
+        </script>";
 }
 }
 

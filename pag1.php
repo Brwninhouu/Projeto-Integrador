@@ -98,7 +98,7 @@ button{
         <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-        <a href="index.html"><button type="submit">Início</button><a><br><br>
+        <a href="indexadm.html"><button type="submit">Início</button><a><br><br>
         <a href="pag3.php"><button type="submit">Cadatrar Usuários</button><a><br><br>
         <a href="pag2.php"><button type="submit">Consultar Personagens</button><a>
         </fieldset>
