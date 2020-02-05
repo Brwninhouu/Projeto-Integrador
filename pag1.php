@@ -7,11 +7,12 @@
     <title>Personagens</title>
 </head>
 <body>
+<section class="container-fluid">
 <style>
 
 body {
 
-background-image: url("img/zoro.jpg");
+background: black;
 
 background-repeat: no-repeat;
 
@@ -20,7 +21,10 @@ background-position: center;
 }
 
 h1 {
-	color: Maroon;
+	color: white;
+}
+p{
+    color: white;
 }
 
 a:link, a:visited {
@@ -33,34 +37,72 @@ a:hover {
 a:active {
 	text-decoration: none
 	}
+    input[type=number]{   
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+    width:150px
+}
+input[type=text]{   
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+    width:150px
+}
+textarea{
+    border: 1px solid #000000;
+    background:#cccccc;
+    width:150px;
+    height:100px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+button{
+    background:#006699;
+        color:#ffffff;
+        
 }
 </style>
-<br><br><br><br><br><br><br><br><br><br><br>
+
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
         <center><h1>Painel Administrador<br>
-    Cadastrar Produtos:</h1>
+        <p>Cadastrar Produtos:</h1>
         <fieldset style="width: 30%;">
 		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
-        Nome do produto:<br>
+        <p>Nome do produto:<br>
         <input type="text" name="personagem" required="required"/>
         <br><br>
-        Valor:<br>
-        <input type="text" name="recompensa" required="required"/>
+        <p>Valor:<br>
+        <input type="number" class="form-control" name="recompensa">
         <br><br>
-        Descrição:<br>
+        <p>Descrição:<br>
         <textarea name="fruta"></textarea>
         <br><br>
-        Selecionar foto<br>
+        <p>Selecionar foto<br>
         <input type="file" name="foto" required="required"/><br>
         <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-        <a href="index.html">PÁGINA INICIAL<a><br>
-        <a href="pag3.php">CADASTRAR USUÁRIOS<a><br>
-        <a href="pag2.php">CONSULTAR PERSONAGENS<a>
+        <a href="index.html"><button type="submit">Início</button><a><br><br>
+        <a href="pag3.php"><button type="submit">Cadatrar Usuários</button><a><br><br>
+        <a href="pag2.php"><button type="submit">Consultar Personagens</button><a>
         </fieldset>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
 		</body>
 		
 		</html>
