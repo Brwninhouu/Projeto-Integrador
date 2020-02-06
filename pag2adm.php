@@ -9,7 +9,12 @@
     <title>Consultar</title>
 </head>
 <body>
+
 <script>
+        function excluir(idpersonagem){
+    if(confirm("Deseja realmente mandar esse cara pelos ares?")){
+    location.href="excluir.php?id="+idpersonagem;}
+    }
         function sair() {    
 	alert('Você saiu do sistema!'); location= './index.php';
 }
@@ -107,6 +112,8 @@ if(mysqli_num_rows($res) > 0){
                 <th>Valor</th>
                 <th>Descrição</th>
                 <th>Foto</th>
+                <th>Editar</th>
+                <th>Excluir</th>
             </tr>
 
          <?php
@@ -116,7 +123,9 @@ if(mysqli_num_rows($res) > 0){
                  <td><?php echo $linha["personagem"];?></td>
                  <td>R$: <?php echo $linha["recompensa"];?></td>
                  <td><?php echo $linha["fruta"];?></td>
-                 <td><img src="upload/<?php echo $linha["foto"]; ?>"></td>         
+                 <td><img src="upload/<?php echo $linha["foto"]; ?>"></td>          
+                 <td><a href="editar.php?id=<?php echo $linha['idpersonagem'];?>"><img src="img/editar.jpg"></a></td>
+                 <td><a href="excluir.php?id=<?php echo $linha['idpersonagem'];?>"><img src="img/excluir.png"></a></td>
          <?php }
          ?>
          </table>
