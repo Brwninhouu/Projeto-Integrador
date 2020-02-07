@@ -19,7 +19,7 @@
         $sql = "insert into usuario (email, senha, adm, id) values ('$email', '$senha', '$adm', null)";
         if(mysqli_query($con,$sql)){
             echo "<script>
-            alert('Usuário cadastrado!! '); location= './cadastrousuario.php';
+            alert('Usuário cadastrado!! '); location= './index.php';
             </script>";
 }else{
     echo "erro";

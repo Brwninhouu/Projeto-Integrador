@@ -31,9 +31,13 @@
 
 
         if($ext != "jpg" && $ext != "jpeg" && $ext != "png" && $ext != "gif" && $ext != "jfif"){
-          echo "<h1>Arquivo inválido, seu doente, ta parecendo o lucas que copia.</h1>";
-        }elseif($foto["size"] > 1024 *800){
-            echo "<h1>Tamanho igual o do lucão, vai dar não!</h1>";
+            echo "<script>
+            alert('Selecione um arquvio jpg, jpeg, png, gif ou jfif!'); location= './pag2adm.php';
+            </script>";
+        }elseif($foto["size"] > 1 *1){
+            echo "<script>
+            alert('Tamanho igual do Lucão, por favor bota um Bessa! Tô cansadão, tô morto!'); location= './pag2adm.php';
+            </script>";
         }else{
             
     

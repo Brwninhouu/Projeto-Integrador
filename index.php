@@ -11,12 +11,14 @@
 <style>
 body {
 
-background:black;
+background-image:url(img/jax.jpg);
 
 background-repeat: no-repeat;
 
 background-position: center;
 }
+
+
 h1, h4,h3 {
 	color: white;
     text-align:center;
@@ -98,7 +100,7 @@ input[type=button]{
 <fieldset>
    <legend><h3>LOGIN</h3></legend>
     <form action="login.php" method="post">
-    <h4> <label for="email">E-mail: </label><input id="email" type=email required name=email></h4>
+    <h4> <label for="email">E-mail: </label><input id="email" type=email required="required" name="email" placeholder="Digite seu email!"/></h4>
     <br><br>
     <h4>Senha: <input type="password" name="senha" placeholder="Digite a Senha"/></h4>
     <br><br>

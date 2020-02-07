@@ -7,7 +7,7 @@
     <title>Personagens</title>
 </head>
 <body>
-<script>
+<script type="text/javascript">
         function sair() {    
 	alert('Você saiu do sistema!'); location= './index.php';
 }
@@ -17,7 +17,7 @@
 
 body {
 
-background: black;
+    background-image:url(img/jax.jpg);
 
 background-repeat: no-repeat;
 
@@ -81,19 +81,24 @@ button{
         color:#ffffff;
         
 }
-</style>
+form {
+  text-align:center;
+  border: 1px solid;
 
+}
+</style>
+<form>
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
-        <center><h1>Painel Administrador<br>
+        <h1>Painel Administrador<br>
         <p>Cadastrar Produtos:</h1>
-        <fieldset style="width: 30%;">
+        <fieldset>
 		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
         <p>Nome do produto:<br>
-        <input type="text" name="personagem" required="required"/>
+        <input type="text" name="personagem" required="required" placeholder="Digite o Nome do Produto!"/>
         <br><br>
         <p>Valor:<br>
-        <input type="number" class="form-control" name="recompensa">
+        <input type="number" class="form-control" name="recompensa" placeholder="Digite o Valor do Produto!"/>
         <br><br>
         <p>Descrição:<br>
         <textarea name="fruta"></textarea>
@@ -103,12 +108,15 @@ button{
         <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
+
         <a href="indexadm.html"><button type="">Início</button><a><br><br>
         <a href="pag3.php"><button>Cadatrar Usuários</button><a><br><br>
         <a href="pag2adm.php"><button type="">Consultar Produtos</button><a><br><br>
         <button onclick="sair()">SAIR</button><a>
-        </fieldset>
+    
+    </fieldset>
 </section>
-		</body>
+</form>        
+</body>
 		
 		</html>

@@ -88,7 +88,7 @@ form {
 }
 
 </style>
-<br><br><br><br><br><br><br><br><br><br><br>
+
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
        
@@ -111,7 +111,7 @@ form {
         <a href="index.php">  <button type="submit">Logar</button><a><br>
         </fieldset>
        
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 		</body>
 		
 		</html>
