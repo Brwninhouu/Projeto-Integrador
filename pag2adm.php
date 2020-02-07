@@ -118,6 +118,7 @@ if(mysqli_num_rows($res) > 0){
 
          <?php
          while($linha = mysqli_fetch_array($res)){
+           //  var_dump($linha);
              ?>
              <tr>
                  <td><?php echo $linha["personagem"];?></td>

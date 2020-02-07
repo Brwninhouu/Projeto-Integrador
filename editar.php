@@ -11,7 +11,7 @@ $reg = mysqli_fetch_array($resultado);
 ?>
 
 <h3>Atualizar produto</h3>
-<form action="atualizar.php" method="post">
+<form action="atualizar.php" method="post" enctype="multipart/form-data">>
 Nome do produto:
 <input type="text" name="personagem" id="personagem" value="<?php echo $reg["personagem"]; ?>"><br><br>
 Valor:
