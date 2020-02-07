@@ -58,7 +58,11 @@
 <section class="container-fluid">
 
 <style>
-
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 body {
 
 background:black;
@@ -74,6 +78,8 @@ h1 {
 
 td, th {
   border: 1px solid orange;
+  width:"98%";
+
 }
 
 img{
@@ -106,7 +112,7 @@ if(mysqli_num_rows($res) > 0){
     ?>
     <body>
        
-    <table>
+    <table class="table-responsive">
             <tr>
                 <th>Produto</th>
                 <th>Valor</th>
@@ -125,8 +131,8 @@ if(mysqli_num_rows($res) > 0){
                  <td>R$: <?php echo $linha["recompensa"];?></td>
                  <td><?php echo $linha["fruta"];?></td>
                  <td><img src="upload/<?php echo $linha["foto"]; ?>"></td>          
-                 <td><a href="editar.php?id=<?php echo $linha['idpersonagem'];?>"><img src="img/editar.jpg"></a></td>
-                 <td><a href="excluir.php?id=<?php echo $linha['idpersonagem'];?>"><img src="img/excluir.png"></a></td>
+                 <td><a href="editar.php?id=<?php echo $linha['idpersonagem'];?>">✏</a></td>
+                 <td><a href="excluir.php?id=<?php echo $linha['idpersonagem'];?>">✖</td>
          <?php }
          ?>
          </table>

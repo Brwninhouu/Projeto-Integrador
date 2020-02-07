@@ -12,7 +12,7 @@
 	alert('Você saiu do sistema!'); location= './index.php';
 }
 </script>
-<section class="container-fluid">
+
 <style>
 
 body {
@@ -77,17 +77,35 @@ textarea{
     -webkit-box-shadow: 1px 1px 2px #333333;
 }
 button{
-    background:#006699;
+    background:purple;
         color:#ffffff;
         
 }
-form {
+form,fieldset{
   text-align:center;
-  border: 1px solid;
+  border: 0px solid;
 
 }
+button{
+    border: 0;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+
+
+}
+.center{
+    text-align:center;
+    margin:auto;
+
+}
+
 </style>
-<form>
+<section class="container-fluid center" >
         <!--O formulário precisa ser habilitado a enviar arquivo (enctype="multipart/form-data"), 
         habilita o form a enviar arquivo-->
         <h1>Painel Administrador<br>
@@ -95,10 +113,10 @@ form {
         <fieldset>
 		<b><form action="gravar.php" method="post" enctype="multipart/form-data">
         <p>Nome do produto:<br>
-        <input type="text" name="personagem" required="required" placeholder="Digite o Nome do Produto!"/>
+        <input type="text" name="personagem" required="required"/>
         <br><br>
         <p>Valor:<br>
-        <input type="number" class="form-control" name="recompensa" placeholder="Digite o Valor do Produto!"/>
+        <input type="number" class="form-control" name="recompensa">
         <br><br>
         <p>Descrição:<br>
         <textarea name="fruta"></textarea>
@@ -108,15 +126,15 @@ form {
         <br>
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
-
-        <a href="indexadm.html"><button type="">Início</button><a><br><br>
-        <a href="pag3.php"><button>Cadatrar Usuários</button><a><br><br>
-        <a href="pag2adm.php"><button type="">Consultar Produtos</button><a><br><br>
-        <button onclick="sair()">SAIR</button><a>
-    
     </fieldset>
+
+    <a href="indexadm.html"><button type="">Início</button><a>
+        <a href="pag3.php"><button>Cadastrar Usuários</button><a>
+        <a href="pag2adm.php"><button>Consultar Produtos</button><a>
+        <button onclick="sair()">SAIR</button><a>
+
 </section>
-</form>        
+    
 </body>
 		
 		</html>

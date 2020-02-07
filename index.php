@@ -30,7 +30,7 @@ p{
 }
 form {
   text-align:center;
-  border: 1px solid;
+
 
 }
 input[type=password]{   
@@ -97,10 +97,10 @@ input[type=button]{
 
 <h1>Entrar</h1>
 <p>Por favor, cadastre-se ou faça login!</p>
-<fieldset>
+
    <legend><h3>LOGIN</h3></legend>
     <form action="login.php" method="post">
-    <h4> <label for="email">E-mail: </label><input id="email" type=email required="required" name="email" placeholder="Digite seu email!"/></h4>
+    <h4> <label for="email">E-mail: </label><input id="email" type=email required="required" name="email" placeholder="Digite se email!"/></h4>
     <br><br>
     <h4>Senha: <input type="password" name="senha" placeholder="Digite a Senha"/></h4>
     <br><br>
@@ -108,7 +108,7 @@ input[type=button]{
 <input type="submit" value="Entrar no Sistema"/><br><br>
 <a href="cadastrousuario.php"> <input type="button" value="Cadastrar"><a>
 </form>
-</fieldset>
+
 </section>
 </body>
 </html>

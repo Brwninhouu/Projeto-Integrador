@@ -12,7 +12,7 @@
 
 body {
 
-background: black;
+    background-image:url(img/jax.jpg);
 
 background-repeat: no-repeat;
 
@@ -80,7 +80,7 @@ input[type=password]{
 }
 form {
   text-align:center;
-  border: 1px solid;
+  border: 0px solid;
 
 }
 #form{
@@ -95,7 +95,7 @@ form {
             
         
         <h1>Cadastrar usuários</h1>
-        <fieldset>
+       
 <b><form action="gravarusuario.php" method="post" enctype="multipart/form-data">
         <p>E-mail:<br>
         <input type="text" name="email" required="required"/>
@@ -109,7 +109,7 @@ form {
         <input type="submit" value="Cadastrar"/>
         </form><br><br><br>
         <a href="index.php">  <button type="submit">Logar</button><a><br>
-        </fieldset>
+   
        
 
 		</body>
