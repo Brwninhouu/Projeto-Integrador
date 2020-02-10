@@ -34,7 +34,7 @@
             echo "<script>
             alert('Selecione um arquvio jpg, jpeg, png, gif ou jfif!'); location= './pag2adm.php';
             </script>";
-        }elseif($foto["size"] > 1 *1){
+        }elseif($foto["size"] > 1024 *800){
             echo "<script>
             alert('Tamanho igual do Lucão, por favor bota um Bessa! Tô cansadão, tô morto!'); location= './pag2adm.php';
             </script>";
